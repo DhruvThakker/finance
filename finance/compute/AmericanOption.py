@@ -28,6 +28,11 @@ def getAmericanValuesBinomial(S,depth,k,u,d,r):
         price = (1.0/(1.0+r))*(p*v[2*i]+q*v[2*i+1])
         v[i] = max(k-s[i],price)
     return v
-    
+
+def getAmericanValuesLeastSquareNormal(n_paths, p_length, S_zero, K, r, volatility):
+    return 0.5
+def getAmericanValuesLeastSquareNeural(n_paths, p_length, S_zero, K, r, volatility):
+    return 1.5
+
 #V = getAmericanValuesBinomial(4,depth,k,u,d,r)
 #print (V)
