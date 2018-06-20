@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^compute/binomial/', views.BinomialView.as_view()),
     url(r'^compute/leastsquare/', views.LeastSquareView.as_view()),
+    url(r'^compute/finitedifference/', views.FiniteDifferenceView.as_view()),
 ]
